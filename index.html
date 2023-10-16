@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+</head>
+<style>
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 1000px;
+  margin-top: -40px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  /* margin-right: -60px; */
+  padding-right: 220px;
+  background-color:#232429 ;
+  color: #232429;
+  margin-top: -1050px;
+}
+
+.search-bar input[type="text"] {
+  padding: 1px;
+  border: none;
+  /* border-radius: 10%; */
+  background-color: #232429;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: #232429;
+}
+.image-gallery{
+  margin-top: -1050px;
+}
+
+.image-gallery img {
+  width: 100px;
+  height: 100px;
+  margin-right: 2px;
+  
+}
+.v1{
+    margin-top: -65px;
+    margin-left: -180px;
+}
+.vertical-line {
+            position: fixed;
+            /* Đảm bảo đường kẻ dọc luôn hiển thị trên màn hình */
+            top: 0;
+            /* Vị trí đầu đường kẻ dọc */
+            left: 50%;
+            /* Vị trí ngang của đường kẻ dọc (ở giữa màn hình) */
+            height: 100%;
+            /* Chiều cao của đường kẻ dọc (đầy đủ chiều cao màn hình) */
+            border-left: 0.5px solid silver;
+            /* Đường kẻ dọc màu đen với độ rộng 1px */
+            margin-left: -475px;
+        }
+.body{
+    background-color: #232429;
+
+}
+
+
+.grid-container1 {
+            display: grid;
+
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            
+            padding: 30px;
+            border-radius: 30%;
+           
+            margin-top: -500px;
+            margin-left: 280px;
+           
+        }
+
+        .grid-container1>div {
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 1px solid black;
+            text-align: left;
+            font-size: 18px;
+            border-radius: 10%;
+           
+            
+            
+        }
+
+
+        .grid-container2 {
+            display: grid;
+
+            grid-template-columns: auto auto ;
+            gap: 10px;
+            
+            padding: 30px;
+            border-radius: 10px;
+           
+            margin-top: 20px;
+            margin-left: 280px;
+           
+        }
+
+        .grid-container2>div {
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 1px solid black;
+            text-align: left;
+            font-size: 18px;
+            /* border-radius: 10%; */
+           
+            
+            
+        }
+
+
+   .img1{
+    height:20px;width: 20px;margin-left:310px;margin-top:-80px;
+   }
+   .container1 {
+  display: flex;
+ margin-top: 15px;
+}  
+.container2 {
+  display: flex;
+ margin-top: 10px;
+}  
+.container3{
+  display: flex;
+  margin-top: 20px;
+}
+.main{
+  display: flex;
+}
+.Invoice{
+display: flex;
+margin-top: 10px;
+}
+.name{
+  display: flex;
+}
+.main1{
+  display: flex;
+}
+.main2{
+  display: flex;
+}
+.main3{
+  display: flex;
+}
+.main4{
+  display: flex;
+}
+.main5{
+  display: flex;
+ margin-left: -5px;
+}
+.grid-container4 {
+            display: grid;
+            grid-template-columns: auto;
+           gap: 10px;
+            
+            padding: 10px;
+            width: 50px;
+            height: 600px;
+            margin-left: 160px;
+            
+            margin-top: -890px;
+        }
+
+        .grid-container4>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #FFF;
+            text-align: center;
+            font-size: 30px;
+            /* border-radius: 10%; */
+           
+        }
+        .b1{
+          display:flex;
+          border-radius: 10%;margin-top: 45px;margin-left: -105px;background-color:#35353D ;
+          width: 100px;
+          height: 30px;
+        }
+        .Logout{
+          display: flex;
+          margin-top: -20px;
+          margin-left: 25px;
+        }
+        .Analytical{
+          display: flex;
+          margin-left: 30px;
+        }
+        .Analytical1{
+          display: flex;
+          margin-left: 25px;
+        }
+        .Analytical2{
+          display: flex;
+          margin-left: 30px;
+        }
+        .Analytical3{
+          display: flex;
+          margin-left:30px;
+        }
+        .Analytical4{
+          display: flex;
+          margin-left: 30px;
+        }
+        .Activity{
+display: flex;
+margin-left: 20px;
+        }
+        .Activity1{
+          display: flex;
+          margin-left: 20px;
+          margin-top: -40px;
+        }
+        .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #A8AEF6;
+  border-radius: 50%;
+  margin-top: 65px;
+  margin-left: 20px;
+}
+.circle1 {
+  width: 10px;
+  height: 10px;
+  background-color: #FF9F6E;
+  border-radius: 50%;
+  margin-top: 65px;
+  margin-left: 20px;
+}
+
+
+  
+.circle2 {
+  width: 10px;
+  height: 10px;
+  background-color: #DFDFDF;
+  border-radius: 50%;
+  margin-top: 65px;
+  margin-left: 20px;
+}
+.circle3 {
+  width: 10px;
+  height: 10px;
+  background-color: #B97858;
+  border-radius: 50%;
+  margin-top: 65px;
+  margin-left: 23px;
+}
+.chart1{
+  margin-top: 45px;
+}
+</style>
+
+<body class="body">
+    <h1 style="color: #fff;font-size: 26px;margin-left:310px;margin-bottom: -30px;">Overview</h1>
+    <div class="main5">
+      <img src="assets\z4774044220395_42cf82c8087a898bb589f89c900559f3.jpg" style="width:20px ;height: 20px;margin-left: 40px;margin-top: 5px;">
+      <h1 style="font-size: 16px;color: #fff;margin-top: 7px;margin-left: 5px;">SPECTRA</h1>
+      
+      <button class="b1" >
+        <img src="assets\z4774121834412_b0fe50b3a9b04c3a6137f200e019b333.jpg" style="height:20x ;width:20px ;">
+         <p style="color: #fff;margin-top: 2px;">Dashboard</p></button>
+      
+    
+    </div>
+    <br>
+    <div class="Analytical">
+<img src="assets\z4779239947786_5c338c1f3912d5d0858b32c86c456132.jpg"style="width: 35px;height: 35px;margin-top: 10px;">
+<p style="font-size: 18px;color: #fff;opacity: 0.5;margin-left: 2px;">Analytics</p>
+    </div>
+    
+    <div class="Analytical1">
+      <img src="assets\z4779257036971_d35ea853d91f55901fa8754172cc2603.jpg"style="width: 40px;height: 40px;margin-top: 7px;">
+      <p style="font-size: 18px;color: #fff;opacity: 0.5;margin-left: 2px;">Contacts</p>
+          </div>
+          <div class="Analytical2">
+            <img src="assets\z4779266172681_6a523083ba60e441aa85a7814bf7119d.jpg"style="width: 35px;height: 35px;margin-top: 10px;">
+            <p style="font-size: 18px;color: #fff;opacity: 0.5;margin-left: 2px;">Mail</p>
+                </div>
+                <div class="Analytical3">
+                  <img src="assets\z4779266804332_7029199c2cb46bf5caaf129fcf38bc22.jpg"style="width: 35px;height: 35px;margin-top: 10px;">
+                  <p style="font-size: 18px;color: #fff;opacity: 0.5;margin-left: 2px;">Calender</p>
+                      </div>
+                      <div class="Analytical4">
+                        <img src="assets\z4779267529181_4440d9f02d37951662045db5e4da48f5.jpg" style="width: 35px;height: 35px;margin-top: 7px;">
+                        <p style="font-size: 18px;color: #fff;opacity: 0.5;margin-left: 2px;">Settings</p>
+                            </div>
+   
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="Logout"><img src="assets\z4779225461078_0fd09e99490a6b976d5a947704a98b73.jpg" style="width: 35px;height: 35px;margin-top: 5px;margin-left: -1px;">
+
+<h1 style="font-size: 18px;color: #fff;opacity: 0.5;margin-top: 12px;">Log out</h1>
+</div>
+    <div class="container">
+      
+        <div class="search-bar">
+            
+            <i class="fas fa-search" style="color: black"></i>
+          <input type="text" placeholder="Search here...">
+          
+        </div>
+        <div class="image-gallery">
+          <img src="assets\z4770592324030_eeaa2d1f2cdb58df293237cef4e31def.jpg" style ="height:20px;width: 20px;" >
+          <img src="assets\z4770876896826_f4965004732c828200c23995d51c3784.jpg"style ="height:20px;width: 20px;" >
+          <img src="assets\z4770877851451_ed907741e5c3788da7d509939168a184.jpg" style ="height:20px;width: 20px;">
+        </div>
+      </div>
+      <div class="vertical-line"></div>
+      
+      
+      <div class="grid-container1">
+        <div  style="width: 350px;height: 300px;background-color: #A6AEFF;" >
+          
+        
+          <div class="container2">
+            <img src="assets\z4772934758905_0367709e6ad7ac8a5ed00a4286af6415.jpg" style="margin-top: 10px;width: 25px;height: 25px;margin-left: 20px;" >
+            <h1 style="font-size: 18px;margin-top: 15px;margin-left: 10px;">Profit   
+            </h1>
+            <img  src="assets\z4772936590176_e5e9c30216c0b153a67f416457c0b338.jpg"style="margin-top: 10px;width: 20px;height: 20px;margin-left:200px">
+
+          </div>
+          <img src="assets\z4773073901148_89cfc49e91f9eea814fb0a9537762c92.jpg" style="margin-left: 50px;">
+         
+          
+          
+        <h1 style="font-size: 16px;margin-left: 20px;">+14%<p style="opacity: 0.5;font-size: 12px;margin-left: 45px; margin-top: -15px;">Since last week</p></h1>  
+      <h1 style="margin-left: 18px;margin-top: -10px;">$12 895.5</h1>
+      </div>
+        <div  style="width: 350px;height: 300px;background-color:#35353D;">
+          <div class="container3">
+<h1 style="font-size: 18px;color: #fff;margin-left: 20px;margin-top: 5px;">Sales Report</h1>
+<h1 style="font-size: 14px;color: #fff;margin-left: 150px;margin-top: 10px;">week</h1>
+<img src="assets\z4773510859721_326cdf47fccd2d3cbcbd79703b6e5066.jpg" style="height: 20px;width: 20px;margin-left: 5px;margin-top: 10px;">
+          </div>
+          
+          <h1 style="font-size: 12px;color: #fff;margin-left: 20px;margin-top: -10px;">Earnings
+            <p style="font-size: 12px;color: #fff;opacity: 0.5;margin-left: 60px;margin-top: -14px;">
+            
+            Payments</p></h1>
+            <div class="chart1">
+              <html>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+                <body>
+                
+                <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+                
+                <script>
+                const xValues1 = ["Sun", "Mon", "Tue", "Wed", "Thus","Fri","Sat"];
+                const yValues = [42, 32, 48, 39, 55,32,46];
+                const barColors = ["#4C5158", "#4C5158","#4C5158","#4C5158"," #FCA270","#4C5158","#4C5158"];
+                
+                new Chart("myChart1", {
+                  type: "bar",
+                  data: {
+                    labels: xValues1,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                 
+                });
+                </script>
+                
+                </body>
+                </html>
+            </div>
+           
+              
+          </div>
+        <div  style="width: 350px;height: 300px;background-color:#35353D;">
+         
+        
+
+
+        <div class="container1">
+          <h1 style="font-size: 18px;color: #fff;margin-left: 20px;">Analytical  AI</h1>
+          <img src="assets\z4773127409731_8950153b37893f3499afb76199bdb08e.jpg" style="height:20px ;width: 20px;margin-left: 200px;margin-top:10px;">
+        </div>
+
+        <h1 style="font-size: 12px;color: #fff;margin-left: 20px;margin-top: -10px;opacity: 0.5;">September 2023</h1>
+        <div class="container1">
+          <pre id="output"></pre>
+      </div>
+  
+      <html>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <body>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        
+        <script>
+        const xValues = [1000,5,10,15,20,25,30];
+        
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [  { 
+              data: [300,700,6000,3000,4500,3200,4200,1000,200,100],
+              borderColor: "#5E5B79",
+              fill: false
+            }]
+          },
+         
+        });
+        </script>
+       
+        </div>  
+       
+      </div>
+      
+      <div class="grid-container2">
+
+<div style="height: 350px;width: 750px;background-color:#35353D;border-radius: 5%;">
+<div class="Invoice">
+  <h1 style="font-size: 18px;color: #FFF;margin-left: 20px;">Invoice</h1>
+<img src="assets\z4773789039315_b274e56461c3405068708992e9b01e69.jpg" style="height: 25px;width: 25px;margin-left: 570px;margin-top: 10px;">
+<h1 style="font-size: 18px;color: #FFF;margin-left: 10px;margin-top: 12px;">Report</h1>
+
+
+</div>
+
+<h1 style="font-size: 14px;color: #fff;opacity: 0.5;margin-left: 20px;margin-top: -10px;">3 251 invoices</h1>
+
+<div class="name">
+<h1 style="font-size: 14px;color: #fff;opacity: 0.5;margin-left: 20px;">Customer name</h1>
+<h1 style="font-size: 14px;color: #fff;opacity: 0.5;margin-left: 72px;">Date</h1>
+<h1 style="font-size: 14px;color: #fff;opacity: 0.5;margin-left: 82px;">Amount</h1>
+<h1 style="font-size: 14px;color: #fff;opacity: 0.5;margin-left: 80px;">Product ID</h1>
+<h1 style="font-size: 14px;color: #fff;opacity: 0.5;margin-left: 75px;">Status</h1>
+<h1 style="font-size: 14px;color: #fff;opacity: 0.5;margin-left: 78px;">Option</h1>
+</div>
+<br>
+
+<div class="main1">
+<img src="assets\z4773914718741_70bc574e538cea31f520311b4020f57e.jpg" style="width: 20px;height: 20px;margin-left: 15px;margin-top: 0px;">
+<h1 style="font-size: 16px;color: #fff;margin-top:0px;margin-left: 5px;">Arlene McCoy</h1>
+<h1 style="font-size: 16px;color: #fff;margin-left: 48px;margin-top:0px;">31Aug2023</h1>
+<h1 style="font-size: 16px;color: #fff;margin-left: 33px;margin-top: 0px;">$3 230.2</h1>
+<h1 style="font-size: 16px;color: #fff;margin-left: 73px;margin-top: 0px;">001423</h1>
+<button style="border-radius: 40%;background-color: #2C2C34;color: #FFF;margin-left: 90px;margin-top: -5px;width:50px ;height: 30px;">
+  Paid</button>
+<h1 style="font-size: 16px;color: #fff;margin-left: 68px;margin-top: 0px;color: #535776;">More</h1>
+</div>
+<br>
+
+<div class="main2">
+  <img src="assets\z4773917235006_9d41762eeedd10fc8cec689b001ed565.jpg" style="width: 20px;height: 20px;margin-left: 15px;margin-top: -3px;">
+  <h1 style="font-size: 16px;color: #fff;margin-top:0px;margin-left: 5px;"> Jacob Jones</h1>
+  <h1 style="font-size: 16px;color: #fff;margin-left: 65px;margin-top:0px;">30Aug2023</h1>
+  <h1 style="font-size: 16px;color: #fff;margin-left: 33px;margin-top: 0px;">$5 630.5</h1>
+  <h1 style="font-size: 16px;color: #fff;margin-left: 75px;margin-top: 0px;">004533</h1>
+  <button style="border-radius: 40%;background-color: #2C2C34;color: #FF9F6E;margin-left: 90px;margin-top: -5px;width:60px ;height: 30px;">
+    Unpaid</button>
+  <h1 style="font-size: 16px;color: #fff;margin-left: 56px;margin-top: 0px;color: #535776;">More</h1>
+  </div>
+  <br>
+  
+  <div class="main3">
+    <img src="assets\z4773918568289_1e70a8990e5a33fa5943916e7cc0907f.jpg" style="width: 20px;height: 20px;margin-left: 15px;margin-top: -1px;">
+    <h1 style="font-size: 16px;color: #fff;margin-top:0px;margin-left: 5px;">Marvin Butcher</h1>
+    <h1 style="font-size: 16px;color: #fff;margin-left: 35px;margin-top:0px;">30Aug2023</h1>
+    <h1 style="font-size: 16px;color: #fff;margin-left: 35px;margin-top: 0px;">$4 230.0</h1>
+    <h1 style="font-size: 16px;color: #fff;margin-left: 77px;margin-top: 0px;">001784</h1>
+    <button style="border-radius: 40%;background-color: #2C2C34;color: #fff;margin-left: 90px;margin-top: -5px;width:50px ;height: 30px;">
+      Paid</button>
+    <h1 style="font-size: 16px;color: #fff;margin-left: 65px;margin-top: 0px;color: #535776;">More</h1>
+    </div>
+    <br>
+
+    <div class="main4">
+      <img src="assets\z4773919566607_4a4d83029c83b00301c1d6cdc59e98ab.jpg" style="width: 20px;height: 20px;margin-left: 15px;margin-top: -1px;">
+      <h1 style="font-size: 16px;color: #fff;margin-top:0px;margin-left: 5px;">Ralph Edwards</h1>
+      <h1 style="font-size: 16px;color: #fff;margin-left: 40px;margin-top:0px;">29Aug2023</h1>
+      <h1 style="font-size: 16px;color: #fff;margin-left: 35px;margin-top: 0px;">$3 082.2</h1>
+      <h1 style="font-size: 16px;color: #fff;margin-left: 77px;margin-top: 0px;">001515</h1>
+      <button style="border-radius: 40%;background-color: #2C2C34;color: #fff;margin-left: 90px;margin-top: -5px;width:50px ;height: 30px;">
+        Paid</button>
+      <h1 style="font-size: 16px;color: #fff;margin-left: 64px;margin-top: 0px;color: #535776;">More</h1>
+      </div>
+
+      
+</div>
+<div  style="height: 350px;width: 350px;background-color:#35353D;border-radius: 10%;">
+<div class="main">
+  <h1 style="font-size: 20px;color: #fff;margin-top: 20px;margin-left: 20px;">Activity</h1>
+<img src="assets\z4773127409731_8950153b37893f3499afb76199bdb08e.jpg" style="width:20px ;height: 20px;margin-top: 20px;margin-left: 230px;">
+</div>
+
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+<canvas id="myChart2" style="width:50%;max-width:600px"></canvas>
+
+<script>
+const xValues2 = ["Italy", "France", "Spain", "USA"];
+const yValues2 = [25, 25, 35, 15];
+const barColors1 = [
+  "#FF9F6E",
+  "#A8AEF6",
+  "#DFDFDF",
+  "B97858"
+  
+];
+
+new Chart("myChart2", {
+  type: "doughnut",
+  data: {
+    
+    datasets: [{
+      backgroundColor: barColors1,
+      data: yValues2
+    }]
+  },
+  
+});
+</script>
+<h1 style="color: #fff;margin-left: 150px;font-size: 22px;margin-top: -100px;">+12%
+<br>
+  <p style="font-size: 8px;color: #fff;opacity: 0.5;margin-left: -2px;">Since last week</p>
+</h1>
+<div class="Activity">
+
+  <div class="circle">
+    
+  </div>
+  <p style="font-size: 16px;color: #fff;margin-top: 60px;margin-left: 10px;">Transactions</p>
+  <h1 style="font-size: 16px;opacity: 0.5;color: #fff;margin-top: 60px;margin-left: 10px;">452</h1>
+  <div class="circle1"></div>
+  <p style="font-size: 16px;color: #fff;margin-top: 60px;margin-left: 10px;">Payouts</p>
+  <h1 style="font-size: 16px;opacity: 0.5;color: #fff;margin-top: 60px;margin-left: 10px;">412</h1>
+</div>
+<div class="Activity1">
+  <div class="circle2">
+    
+  </div>
+  <p style="font-size: 16px;color: #fff;margin-top: 60px;margin-left: 10px;">Reports</p>
+  <h1 style="font-size: 16px;opacity: 0.5;color: #fff;margin-top: 60px;margin-left: 40px;">715</h1>
+  <div class="circle3"></div>
+  <p style="font-size: 16px;color: #fff;margin-top: 60px;margin-left: 10px;">Sales</p>
+  <h1 style="font-size: 16px;opacity: 0.5;color: #fff;margin-top: 60px;margin-left: 25px;">128</h1>
+</div>
+</body>
+</html>
+
+
+
+</div>
+
+      </div>
+
+      
+    </div>
+    
+</body>
+
+
+
+</html>
